@@ -2,24 +2,53 @@ package net.neal.exomod.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.neal.exomod.entity.animations.ModAnimationDefinitions;
+import com.mojang.math.Axis;
+import net.minecraft.client.model.ArmedModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.HumanoidArm;
+import net.neal.exomod.entity.animations.ModAnimationDefinitions;
 import net.neal.exomod.entity.custom.TungEntity;
 
-
-public class TungModel<T extends Entity> extends HierarchicalModel<T> {
+public class TungModel<T extends Entity> extends HierarchicalModel<T> implements ArmedModel {
 	private final ModelPart tung;
+	private final ModelPart body;
 	private final ModelPart head;
+	private final ModelPart rightArm;
+	private final ModelPart rightHand;
 
 	public TungModel(ModelPart root) {
 		this.tung = root.getChild("tung");
-		this.head = tung.getChild("body").getChild("torso").getChild("head");
+		this.body = tung.getChild("body");
+		this.head = body.getChild("torso").getChild("head");
+		this.rightArm = body.getChild("right arm");
+		this.rightHand = rightArm.getChild("right_hand");
 	}
+
+	@Override
+	public void translateToHand(HumanoidArm arm, PoseStack poseStack) {
+		this.tung.translateAndRotate(poseStack);
+		this.body.translateAndRotate(poseStack);
+		this.rightArm.translateAndRotate(poseStack);
+		this.rightHand.translateAndRotate(poseStack);
+
+
+		poseStack.scale(0.5f, 0.5f, 0.5f);
+		poseStack.translate(0.200f, -0.45f, -0.5f); // cancels vanilla's player-arm offset
+
+
+		// fine-tuning: adjust these numbers until the handle sits in his hand
+		poseStack.translate(0.0f, 0.25f, 1.0f);
+
+		poseStack.mulPose(Axis.XP.rotationDegrees(-45f));  // tilt forward/back
+		poseStack.mulPose(Axis.YP.rotationDegrees(0f));  // turn around its length
+		poseStack.mulPose(Axis.ZP.rotationDegrees(0f));  // tilt left/right
+	}
+
 
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();

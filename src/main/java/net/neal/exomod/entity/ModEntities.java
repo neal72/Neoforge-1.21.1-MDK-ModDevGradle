@@ -19,7 +19,7 @@ public class ModEntities {
 
     public static final DeferredHolder<EntityType<?>, EntityType<TungEntity>> TUNG =
             ENTITY_TYPES.register("tung", () -> EntityType.Builder.of(TungEntity::new, MobCategory.MONSTER)
-                    .sized(0.3F, 1.0F).build("tung")); //SIZE OF HITBOX
+                    .sized(1F, 2F).build("tung")); //SIZE OF HITBOX
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

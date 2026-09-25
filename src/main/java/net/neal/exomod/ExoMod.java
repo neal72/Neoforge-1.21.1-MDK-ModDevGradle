@@ -2,6 +2,7 @@ package net.neal.exomod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neal.exomod.block.ModBlocks;
+import net.neal.exomod.item.ModArmorMaterials;
 import net.neal.exomod.item.ModCreativeModeTabs;
 import net.neal.exomod.item.ModItems;
 import net.neal.exomod.sound.ModSounds;
@@ -27,8 +28,11 @@ public class ExoMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModArmorMaterials.register(modEventBus);
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
+
+        modEventBus.addListener(this::addCreative);
     }
 
 @SubscribeEvent
@@ -39,7 +43,6 @@ public class ExoMod {
             event.accept(ModItems.TUNGSBAT);
             event.accept(ModItems.TRALA_SPAWN_EGG);
             event.accept(ModItems.TUNG_SPAWN_EGG);
-
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

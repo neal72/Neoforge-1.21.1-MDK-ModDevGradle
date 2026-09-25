@@ -7,6 +7,34 @@
 
   "block.exo_mod.sound_block": "Sound Block",
 
-  "creativetab.exo_mod.exo_items": "ExoMod"
+  "creativetab.exomod.exo_items": "ExoMod",
+
+  "item.exo_mod.pink_diamond_sword": "Pink Diamond Sword",
+  "item.exo_mod.pink_diamond_pickaxe": "Pink Diamond Pickaxe",
+
+  "item.exo_mod.pink_diamond_helmet": "Pink Diamond Helmet",
+  "item.exo_mod.pink_diamond_chestplate": "Pink Diamond Chestplate",
+  "item.exo_mod.pink_diamond_leggings": "Pink Diamond Leggings",
+  "item.exo_mod.pink_diamond_boots": "Pink Diamond Boots",
+
+  "block.exo_mod.pink_diamond_ore": "Pink Diamond Ore",
+  "block.exo_mod.pink_diamond_block": "Pink Diamond Block",
+
+  "block.exo_mod.pink_diamond_stairs": "Pink Diamond Stairs",
+  "block.exo_mod.pink_diamond_slab": "Pink Diamond Slab",
+  "block.exo_mod.pink_diamond_button": "Pink Diamond Button",
+  "block.exo_mod.pink_diamond_pressure_plate": "Pink Diamond Pressure Plate",
+  "block.exo_mod.pink_diamond_fence": "Pink Diamond Fence",
+  "block.exo_mod.pink_diamond_fence_gate": "Pink Diamond Fence Gate",
+  "block.exo_mod.pink_diamond_wall": "Pink Diamond Wall",
+  "block.exo_mod.pink_diamond_door": "Pink Diamond Door",
+  "block.exo_mod.pink_diamond_trap_door": "Pink Diamond Trap Door",
+
+  "sounds.exo_mod.trala_ambient": "Trala Ambient",
+  "sounds.exo_mod.tung_ambient": "Tung Ambient",
+
+
+
+  "creativetab.exodusmod_tab": "Exodus Tab"
 
 }
