@@ -1,0 +1,20 @@
+{
+  "trala_ambient": {
+    "subtitles": "sounds.exo_mod.trala_ambient",
+    "sounds": [
+      {
+        "name": "exo_mod:trala_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "tung_ambient": {
+    "subtitles": "sounds.exo_mod.tung_ambient",
+    "sounds": [
+      {
+        "name": "exo_mod:tung_ambient",
+        "stream": false
+      }
+    ]
+  }
+}
