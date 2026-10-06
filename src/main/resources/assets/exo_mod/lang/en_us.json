@@ -7,8 +7,6 @@
 
   "block.exo_mod.sound_block": "Sound Block",
 
-  "creativetab.exomod.exo_items": "ExoMod",
-
   "item.exo_mod.pink_diamond_sword": "Pink Diamond Sword",
   "item.exo_mod.pink_diamond_pickaxe": "Pink Diamond Pickaxe",
 
@@ -33,8 +31,7 @@
   "sounds.exo_mod.trala_ambient": "Trala Ambient",
   "sounds.exo_mod.tung_ambient": "Tung Ambient",
 
-
-
-  "creativetab.exodusmod_tab": "Exodus Tab"
+  "creativetab.exo_mod.exo_tab": "ExoMod",
+  "creativetab.exomod.exo_items": "ExoMod"
 
 }
