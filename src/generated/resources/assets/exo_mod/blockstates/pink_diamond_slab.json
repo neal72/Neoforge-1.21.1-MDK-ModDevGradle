@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "exo_mod:block/pink_diamond_slab"
+    },
+    "type=double": {
+      "model": "exo_mod:block/pink_diamond_block"
+    },
+    "type=top": {
+      "model": "exo_mod:block/pink_diamond_slab_top"
+    }
+  }
+}

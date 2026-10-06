@@ -22,7 +22,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PINK_DIAMOND_ORE.get())
-                .add(ModBlocks.PINK_DIAMOND_BLOCK.get());
+                .add(ModBlocks.PINK_DIAMOND_BLOCK.get())
+                .add(ModBlocks.PINK_DIAMOND_STAIRS.get())
+                .add(ModBlocks.PINK_DIAMOND_SLAB.get())
+                .add(ModBlocks.PINK_DIAMOND_WALL.get())
+                .add(ModBlocks.PINK_DIAMOND_DOOR.get())
+                .add(ModBlocks.PINK_DIAMOND_FENCE.get())
+                .add(ModBlocks.PINK_DIAMOND_PRESSURE_PLATE.get())
+                .add(ModBlocks.PINK_DIAMOND_TRAP_DOOR.get())
+                .add(ModBlocks.PINK_DIAMOND_FENCE_GATE.get())
+                .add(ModBlocks.MAGIC_BLOCK.get());
+
+
+
+        tag(BlockTags.FENCES).add(ModBlocks.PINK_DIAMOND_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.PINK_DIAMOND_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.PINK_DIAMOND_WALL.get());
 
         // Only diamond-level pickaxes or better can get drops
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -35,5 +50,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_PINK_DIAMOND_TOOL)
                 .addTags(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_PINK_DIAMOND_TOOL);
+
     }
 }

@@ -19,6 +19,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PINK_DIAMOND_BLOCK);
         blockWithItem(ModBlocks.PINK_DIAMOND_ORE);
         blockWithItem(ModBlocks.SOUND_BLOCK);
+        blockWithItem(ModBlocks.MAGIC_BLOCK);
+
+
 
         var tex = blockTexture(ModBlocks.PINK_DIAMOND_BLOCK.get());
 

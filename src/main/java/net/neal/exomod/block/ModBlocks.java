@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neal.exomod.ExoMod;
+import net.neal.exomod.block.custom.MagicBlock;
 import net.neal.exomod.item.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -28,6 +29,11 @@ public class ModBlocks {
     public static final  DeferredBlock<Block> SOUND_BLOCK = registerBlocks("sound_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ROOTS)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlocks("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .sound(SoundType.FROGLIGHT)));
 
 
     public static final DeferredBlock<Block> PINK_DIAMOND_STAIRS = registerBlocks("pink_diamond_stairs",

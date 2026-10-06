@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "exo_mod:block/pink_diamond_block"
+  }
+}
