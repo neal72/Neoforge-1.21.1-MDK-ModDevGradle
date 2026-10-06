@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "exo_mod:block/pink_diamond_block"
+  }
+}

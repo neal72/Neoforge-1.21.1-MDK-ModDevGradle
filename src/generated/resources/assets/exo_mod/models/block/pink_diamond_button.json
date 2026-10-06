@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "exo_mod:block/pink_diamond_block"
+  }
+}

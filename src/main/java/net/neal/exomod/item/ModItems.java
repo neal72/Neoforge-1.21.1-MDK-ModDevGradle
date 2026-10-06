@@ -28,12 +28,13 @@ public class ModItems {
             () -> new DeferredSpawnEggItem(ModEntities.TUNG, 0x7e2688, 0xc5a1c5,
                     new Item.Properties()));
 
-    public static final DeferredItem<Item> PINK_DIAMOND_SWORD = ITEMS.register("pink_diamond_sword",
+    public static final DeferredItem<SwordItem> PINK_DIAMOND_SWORD = ITEMS.register("pink_diamond_sword",
             () -> new SwordItem(ModToolTiers.PINK_DIAMOND, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.PINK_DIAMOND, 4, 2.8F))));
 
-    public static final DeferredItem<Item> PINK_DIAMOND_PICKAXE = ITEMS.register("pink_diamond_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.PINK_DIAMOND, new Item.Properties()));
+    public static final DeferredItem<PickaxeItem> PINK_DIAMOND_PICKAXE = ITEMS.register("pink_diamond_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PINK_DIAMOND, new Item.Properties()
+                    . attributes(PickaxeItem.createAttributes(ModToolTiers.PINK_DIAMOND, 4, 2.8F))));
 
 
     public static final DeferredItem<Item> PINK_DIAMOND_HELMET = ITEMS.register("pink_diamond_helmet",

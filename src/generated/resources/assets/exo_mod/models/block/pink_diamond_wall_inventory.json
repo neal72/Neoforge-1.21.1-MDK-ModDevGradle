@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "exo_mod:block/pink_diamond_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "exo_mod:block/sound_block"
+    }
+  }
+}
