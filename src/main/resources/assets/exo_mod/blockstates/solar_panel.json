@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "exo_mod:block/solar_panel" }
+  }
+}

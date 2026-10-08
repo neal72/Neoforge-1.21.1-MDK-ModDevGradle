@@ -8,10 +8,11 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neal.exomod.ExoMod;
 import net.neal.exomod.block.custom.MagicBlock;
+import net.neal.exomod.block.custom.EnergyStorageBlock;
+import net.neal.exomod.block.custom.SolarPanelBlock;
 import net.neal.exomod.item.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -35,6 +36,11 @@ public class ModBlocks {
                     .strength(2f)
                     .sound(SoundType.FROGLIGHT)));
 
+    public static final DeferredBlock<Block> ENERGY_STORAGE = registerBlocks("energy_storage",
+            () -> new EnergyStorageBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> SOLAR_PANEL = registerBlocks("solar_panel",
+            () -> new SolarPanelBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
     public static final DeferredBlock<Block> PINK_DIAMOND_STAIRS = registerBlocks("pink_diamond_stairs",
             () -> new StairBlock(ModBlocks.PINK_DIAMOND_BLOCK.get().defaultBlockState(),

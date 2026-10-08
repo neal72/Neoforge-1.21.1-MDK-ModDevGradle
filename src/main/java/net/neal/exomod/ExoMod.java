@@ -2,6 +2,7 @@ package net.neal.exomod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neal.exomod.block.ModBlocks;
+import net.neal.exomod.block.entity.ModBlockEntities;
 import net.neal.exomod.item.ModArmorMaterials;
 import net.neal.exomod.item.ModCreativeModeTabs;
 import net.neal.exomod.item.ModItems;
@@ -31,6 +32,7 @@ public class ExoMod {
         ModArmorMaterials.register(modEventBus);
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }

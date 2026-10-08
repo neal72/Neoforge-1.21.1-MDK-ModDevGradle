@@ -1,6 +1,8 @@
 package net.neal.exomod.event;
 
 import net.neal.exomod.ExoMod;
+import net.neal.exomod.block.entity.ModBlockEntities;
+import net.neal.exomod.client.EnergyStorageRenderer;
 import net.neal.exomod.entity.ModEntities;
 import net.neal.exomod.entity.client.*;
 import net.neoforged.api.distmarker.Dist;
@@ -21,5 +23,7 @@ public class ModEventBusClientEvents {
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.TRALA.get(), TralaRenderer::new);
         event.registerEntityRenderer(ModEntities.TUNG.get(), TungRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.ENERGY_STORAGE_BE.get(), EnergyStorageRenderer::new);
+
     }
 }
