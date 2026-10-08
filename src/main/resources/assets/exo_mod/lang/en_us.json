@@ -7,8 +7,6 @@
 
   "block.exo_mod.sound_block": "Sound Block",
 
-  "creativetab.exomod.exo_items": "ExoMod",
-
   "item.exo_mod.pink_diamond_sword": "Pink Diamond Sword",
   "item.exo_mod.pink_diamond_pickaxe": "Pink Diamond Pickaxe",
 
@@ -29,12 +27,13 @@
   "block.exo_mod.pink_diamond_wall": "Pink Diamond Wall",
   "block.exo_mod.pink_diamond_door": "Pink Diamond Door",
   "block.exo_mod.pink_diamond_trap_door": "Pink Diamond Trap Door",
+  "block.exo_mod.magic_block": "Magic Block",
+
 
   "sounds.exo_mod.trala_ambient": "Trala Ambient",
   "sounds.exo_mod.tung_ambient": "Tung Ambient",
 
-
-
-  "creativetab.exodusmod_tab": "Exodus Tab"
+  "creativetab.exo_mod.exo_tab": "ExoMod",
+  "creativetab.exomod.exo_items": "ExoMod"
 
 }

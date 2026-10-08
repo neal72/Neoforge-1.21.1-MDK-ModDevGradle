@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#exo_mod:needs_pink_diamond_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}

@@ -17,7 +17,10 @@ public class ModTags {
         }
     }
 
+
     public static class Items {
+        public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ExoMod.MOD_ID, name));
         }
