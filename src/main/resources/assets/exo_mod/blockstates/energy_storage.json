@@ -1,5 +1,23 @@
 {
-  "variants": {
-    "": { "model": "exo_mod:block/energy_storage" }
-  }
+  "multipart": [
+    { "apply": { "model": "exo_mod:block/energy_storage" } },
+
+    { "when": { "north": "input" },  "apply": { "model": "exo_mod:block/port_input" } },
+    { "when": { "north": "output" }, "apply": { "model": "exo_mod:block/port_output" } },
+
+    { "when": { "east": "input" },   "apply": { "model": "exo_mod:block/port_input",  "y": 90 } },
+    { "when": { "east": "output" },  "apply": { "model": "exo_mod:block/port_output", "y": 90 } },
+
+    { "when": { "south": "input" },  "apply": { "model": "exo_mod:block/port_input",  "y": 180 } },
+    { "when": { "south": "output" }, "apply": { "model": "exo_mod:block/port_output", "y": 180 } },
+
+    { "when": { "west": "input" },   "apply": { "model": "exo_mod:block/port_input",  "y": 270 } },
+    { "when": { "west": "output" },  "apply": { "model": "exo_mod:block/port_output", "y": 270 } },
+
+    { "when": { "up": "input" },     "apply": { "model": "exo_mod:block/port_input",  "x": 270 } },
+    { "when": { "up": "output" },    "apply": { "model": "exo_mod:block/port_output", "x": 270 } },
+
+    { "when": { "down": "input" },   "apply": { "model": "exo_mod:block/port_input",  "x": 90 } },
+    { "when": { "down": "output" },  "apply": { "model": "exo_mod:block/port_output", "x": 90 } }
+  ]
 }

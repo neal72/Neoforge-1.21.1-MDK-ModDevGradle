@@ -6,6 +6,7 @@ import net.neal.exomod.block.entity.ModBlockEntities;
 import net.neal.exomod.item.ModArmorMaterials;
 import net.neal.exomod.item.ModCreativeModeTabs;
 import net.neal.exomod.item.ModItems;
+import net.neal.exomod.screen.ModMenuTypes;
 import net.neal.exomod.sound.ModSounds;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -35,6 +36,7 @@ public class ExoMod {
         ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
+        ModMenuTypes.register(modEventBus);
     }
 
 @SubscribeEvent
